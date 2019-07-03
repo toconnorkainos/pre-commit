@@ -7,6 +7,14 @@
   language: script
   files: \.tf$
   exclude: \.+.terraform\/.*$
+  
+- id: tflint
+  name: Terraform lint
+  description: Runs TF Lint
+  entry: hooks/tflint.sh
+  language: script
+  files: \.tf$
+  exclude: \.+.terraform\/.*$
 
 - id: shellcheck
   name: Shellcheck Bash Linter
